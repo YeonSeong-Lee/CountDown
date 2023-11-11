@@ -8,6 +8,8 @@
   font-weight: 700;
 }
 
+/* milesecond가 움직일 때 전체가 움직이지 않게 하기 */
+
 .countdown__item {
   display: flex;
   justify-content: center;
