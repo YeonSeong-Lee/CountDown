@@ -19,5 +19,5 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById("seconds").innerHTML = seconds;
       document.getElementById("milliseconds").innerHTML = milliseconds;
     }
-  }, 1);
+  }, 1000);
 }, false);
