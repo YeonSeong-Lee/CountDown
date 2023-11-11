@@ -53,4 +53,8 @@
   text-align: center;
 }
 
-/*  TODO: Add media queries */
+@media screen and (max-width: 768px) {
+  .countdown {
+    flex-direction: column;
+  }
+}
