@@ -1,5 +1,6 @@
 // make countdown timer
 document.addEventListener('DOMContentLoaded', function () {
+  const startDate = new Date("2023-03-16").getTime();
   const endDate = new Date("2024-12-06").getTime();
   var downloadTimer = setInterval(function () {
     const currentDate = new Date().getTime();
@@ -17,5 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById("minutes").innerHTML = minutes;
       document.getElementById("seconds").innerHTML = seconds;
     }
+    const progress = Math.floor((currentDate - startDate) / (endDate - startDate) * 100);
+    document.getElementById("progress").value = progress;
+    document.getElementById("progress").innerHTML = progress + "%";
   }, 1000);
 }, false);
