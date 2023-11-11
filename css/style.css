@@ -1,6 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .countdown {
   display: flex;
-  margin: 5rem auto;
+  margin: 5rem 2rem 2rem 2rem;
   justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif;
@@ -32,6 +40,9 @@
 }
 
 .comments {
+  display: flex;
+  margin: 5rem auto;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
